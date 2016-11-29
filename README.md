@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Using ReactJS and Bootstrap, I am going to redesign and build a more interactive and entertaining website for TAA-NJ.
 
 Status:
-  1. React-router supports pagination, which allows users to navigate pages between Home, Photos, About and Links.
+  1. React-router supports page navigation, which allows users to navigate pages between Home, Photos, About and Links.
   2. React-bootstrap facilitates styling TAA-NJ website.
 
 Future:
