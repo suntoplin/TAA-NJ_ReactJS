@@ -7,5 +7,6 @@ Status:
   2. React-bootstrap facilitates styling TAA-NJ website.
 
 Future:
-  1. Add image popup box feature for aging adults.
-  2. 
+  1. In Home page, add upcoming events.
+  2. In Photo page, add image popup box feature for aging adults.
+  3. Complete About and Links pages.
