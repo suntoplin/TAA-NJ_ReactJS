@@ -89,15 +89,11 @@ class PhotoList2 extends Component{
 export default class Photos extends Component {
 	render(){
 		return(
-			<div >
-				<div className="container">	
-					<p className='lead'>Past Events & Photos</p>
-					<hr className="line" />
-				</div>
-				<Grid> 
-					<Photo events={ RowPhotos } /> 
-				</Grid>
-			</div>
+			<Grid> 
+				<p className='lead'>Past Events & Photos</p>
+				<hr className="line" />
+				<Photo events={ RowPhotos } /> 
+			</Grid>
 		)
 	}	
 }

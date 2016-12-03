@@ -1,5 +1,5 @@
 // Board member list 
-export const memberDisplay = [
+export const RowAbout = [
 	{
 		"FirstName": "Mark",
 		"LastName": "Kao",
