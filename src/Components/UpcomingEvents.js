@@ -4,22 +4,24 @@ import { Button } from 'react-bootstrap'
 
 function Upcoming(props){
   return(
-    <div>
-    {props.events.map(
-      event=> <UpcomingList
-      key={event.event_title.toString()}
-      icon={event.icon}
-      date={event.date}
-      title={event.event_title}
-      place={event.place}
-      address={event.address}
-      details={event.details}
-      stateTime={event.time_start}
-      endTime={event.time_end}
-      img={event.img}
-      contact1={event.contact1}
-      contact1_email={event.contact1_email}
-      />)}
+    <div className="container lead">
+      <p><strong>Upcoming Events</strong></p><hr className="line" />
+      {props.events.map(
+        event=> <UpcomingList
+        key={event.event_title.toString()}
+        icon={event.icon}
+        date={event.date}
+        title={event.event_title}
+        place={event.place}
+        address={event.address}
+        details={event.details}
+        stateTime={event.time_start}
+        endTime={event.time_end}
+        img={event.img}
+        contact1={event.contact1}
+        contact1_email={event.contact1_email}
+        />)}
+        <hr/>
     </div>
   );
 }
@@ -27,16 +29,16 @@ function Upcoming(props){
 class UpcomingList extends Component{
   constructor(){
     super()
-    this.state={'isHidden':true,'style':'hidecontent'}
+    this.state={isHidden:true,style:'hidecontent'}
     this.handleClick=this.handleClick.bind(this)
   }
   handleClick(){
-    if(this.state.isHidden){
-      this.setState({'isHidden':false,'style':'showcontent'})
-    }else{
-      this.setState({'isHidden':true,'style':'hidecontent'})
-    }
+    this.setState({
+      isHidden:!this.state.isHidden,
+      style:this.state.isHidden ?'showcontent' :'hidecontent'
+    })
   }
+
   render(){
     const Title=(
       <p>
@@ -65,10 +67,7 @@ class UpcomingList extends Component{
 export default class UpcomingEvents extends Component{
   render(){
     return(
-      <div className="container lead">
-        <p><strong>Upcoming Events</strong></p><hr className="line" />
-        <Upcoming events={upcomingEvents} /><hr/>
-      </div>
+      <Upcoming events={upcomingEvents} />
     )
   }
 }
