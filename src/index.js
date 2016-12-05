@@ -5,6 +5,7 @@ import About from './Components/Pages/About'
 import Links from './Components/Pages/Links'
 import Home from './Components/Pages/Home'
 import Photos from './Components/Pages/Photos'
+import Contact from './Components/Pages/Contact'
 import './index.css';
 
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
@@ -16,6 +17,7 @@ render(
     		<Route path="About" component={About} />
     		<Route path="Links" component={Links} />
     		<Route path="Photos" component={Photos} />
+        <Route path="Contact" component={Contact} />
     	</Route>
   	</Router>
 	,document.getElementById('root'))

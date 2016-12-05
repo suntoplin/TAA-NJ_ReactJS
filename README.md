@@ -9,4 +9,3 @@ Status:
 Future:
   1. In Home page, add upcoming events.
   2. In Photo page, add image popup box feature for aging adults.
-  3. Complete About and Links pages.

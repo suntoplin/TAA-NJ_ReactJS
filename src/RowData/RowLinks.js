@@ -1,6 +1,3 @@
-
-
-
 export const otherOrg=[
 {
 	"url":"http://www.ketagalanmedia.com/",

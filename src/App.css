@@ -45,6 +45,24 @@
   width: 50px;
 }
 
+/*UpcomingEvents*/
+/*.header{
+
+}*/
+.hidecontent{
+  display: none;
+}
+.showcontent{
+  padding: 20px;
+  /*border-left: 3px solid rgb(204, 204, 255); */
+}
+
+.showcontentborder{
+  margin-top: 20px;
+  padding: 10px;
+  border-left: 5px solid rgb(238, 238, 238);
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
