@@ -8,3 +8,5 @@ Status:
 
 Future:
   1. In Photo page, add image popup box feature for aging adults.
+  2. Add hamburger button in Header.js
+  3. Add contact page for sending email to TAA-NJ 

@@ -59,7 +59,7 @@
 
 .showcontentborder{
   margin-top: 20px;
-  padding: 10px;
+  padding: 2px 10px 2px 10px;
   border-left: 5px solid rgb(238, 238, 238);
 }
 

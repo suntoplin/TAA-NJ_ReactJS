@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {upcomingEvents} from '../RowData/RowUpcomingEvents'
+import { Button } from 'react-bootstrap'
 
 function Upcoming(props){
   return(
@@ -40,7 +41,7 @@ class UpcomingList extends Component{
     const Title=(
       <p>
         <span className={this.props.icon}> </span> {this.props.date} {this.props.title}
-        <span className='btn btn-secondary' onClick={this.handleClick}> MORE </span>
+        <Button bsStyle="link" onClick={this.handleClick}> MORE </Button>
       </p>
     )
     const Content=(
