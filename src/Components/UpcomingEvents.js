@@ -1,24 +1,5 @@
 import React, {Component} from 'react';
-
-const upcomingEvents=[
-	{
-		"date":"12/2016",
-		"event_title":"Princeton Outreach at Palmer Square",
-		"place":"Palmer square",
-		"address":"40 Nassau St. Princeton, New Jersey 08542",
-		"details":"Co-organized with OTD-NJ",
-		"time_start":"",
-		"time_end":"",
-		"contact1_title":"",
-		"contact1":"Tsai-Yen Han",
-		"contact1_email":"jane.han@gmail.com",
-		"contact2":"",
-		"contact2_email":"",
-		"icon":"glyphicon glyphicon-bullhorn",
-		"img":"Images/20161008/201610outreach-02.jpg"
-	},
-
-]
+import {upcomingEvents} from '../RowData/RowUpcomingEvents'
 
 function Upcoming(props){
   return(

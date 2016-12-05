@@ -1,4 +1,4 @@
-// UpcomingEvents ([
+export const upcomingEvents=[
 	// {
 	// 	"date":"10/01/2016",
 	// 	"event_title":"Rutgers TSA movie screening: 總鋪師",
@@ -51,7 +51,7 @@
 	// 	"event_title":"Rutgers TSA movie screening: 阿罩霧風雲",
 	// 	"place":"Busch Student Center, Rome 116ABC",
 	// 	"address":"604 Bartholomew Road, Piscataway, NJ 08854",
-	// 	"details":"movie screening (阿罩霧風雲). 報名方式，請上網站。 <a href='https://goo.gl/forms/mS6FX4hJDndFVR7y2' target='_blank'>按我報名</a>", 
+	// 	"details":"movie screening (阿罩霧風雲). 報名方式，請上網站。 <a href='https://goo.gl/forms/mS6FX4hJDndFVR7y2' target='_blank'>按我報名</a>",
 	// 	"time_start":"7pm",
 	// 	"time_end":"9pm",
 	// 	"contact1_title":"Rutgers TSA predsident",
@@ -131,7 +131,7 @@
 	// 	"event_title":"Rutgers TSA movie screening: 阿罩霧風雲 II：落子",
 	// 	"place":"Busch Campus Center meeting room 117ABC",
 	// 	"address":"604 Bartholomew Road, Piscataway, NJ 08854",
-	// 	"details":"movie screening (阿罩霧風雲). 報名方式，請上網站。 <a href='https://goo.gl/forms/mS6FX4hJDndFVR7y2' target='_blank'>按我報名</a>", 
+	// 	"details":"movie screening (阿罩霧風雲). 報名方式，請上網站。 <a href='https://goo.gl/forms/mS6FX4hJDndFVR7y2' target='_blank'>按我報名</a>",
 	// 	"time_start":"12",
 	// 	"time_end":"3 pm",
 	// 	"contact1_title":"Rutgers TSA predsident",
@@ -142,21 +142,21 @@
 	// 	"icon":"glyphicon glyphicon-facetime-video",
 	// 	"img":"Images/upcoming/阿罩霧風雲2.jpg",
 	// },
-	// {
-	// 	"date":"12/2016",
-	// 	"event_title":"Princeton Outreach at Palmer Square",
-	// 	"place":"Palmer square",
-	// 	"address":"40 Nassau St. Princeton, New Jersey 08542",
-	// 	"details":"Co-organized with OTD-NJ",
-	// 	"time_start":"",
-	// 	"time_end":"",
-	// 	"contact1_title":"",
-	// 	"contact1":"Tsai-Yen Han",
-	// 	"contact1_email":"jane.han@gmail.com",
-	// 	"contact2":"",
-	// 	"contact2_email":"",
-	// 	"icon":"glyphicon glyphicon-bullhorn",
-	// 	"img":"Images/20161008/201610outreach-02.jpg"
-	// },
-	
-	// ])
+	{
+		"date":"12/2016",
+		"event_title":"Princeton Outreach at Palmer Square",
+		"place":"Palmer square",
+		"address":"40 Nassau St. Princeton, New Jersey 08542",
+		"details":"Co-organized with OTD-NJ",
+		"time_start":"",
+		"time_end":"",
+		"contact1_title":"",
+		"contact1":"Tsai-Yen Han",
+		"contact1_email":"jane.han@gmail.com",
+		"contact2":"",
+		"contact2_email":"",
+		"icon":"glyphicon glyphicon-bullhorn",
+		"img":"Images/20161008/201610outreach-02.jpg"
+	},
+
+	]
