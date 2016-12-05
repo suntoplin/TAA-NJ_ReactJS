@@ -7,6 +7,5 @@ Status:
   2. React-bootstrap facilitates styling TAA-NJ website.
 
 Future:
-  1. In Photo page, add image popup box feature for aging adults.
-  2. Add hamburger button in Header.js
-  3. Add contact page for sending email to TAA-NJ 
+  1. Add hamburger button in Header.js
+  2. Add contact page for sending email to TAA-NJ 

@@ -45,10 +45,26 @@ class PhotoList2 extends Component{
 						<p className="text-center lead"> {this.props.desc_TW} </p>
 					}
 					<Row className="show-grid">
-						<Col sm={3}><img src={require('../../' + this.props.img1)} alt="Loading" className="img-responsive" /></Col>
-						<Col sm={3}><img src={require('../../' + this.props.img2)} alt="Loading" className="img-responsive" /></Col>
-						<Col sm={3}><img src={require('../../' + this.props.img3)} alt="Loading" className="img-responsive" /></Col>
-						<Col sm={3}><img src={require('../../' + this.props.img4)} alt="Loading" className="img-responsive" /></Col>
+					<Col sm={3}>
+						<Link to={require('../../' + this.props.img1)} target='_blank'>
+							<img src={require('../../' + this.props.img1)} alt="Loading" className="img-responsive" />
+						</Link>
+					</Col>
+						<Col sm={3}>
+							<Link to={require('../../' + this.props.img2)} target='_blank'>
+								<img src={require('../../' + this.props.img2)} alt="Loading" className="img-responsive" />
+							</Link>
+						</Col>
+						<Col sm={3}>
+							<Link to={require('../../' + this.props.img3)} target='_blank'>
+								<img src={require('../../' + this.props.img3)} alt="Loading" className="img-responsive" />
+							</Link>
+						</Col>
+						<Col sm={3}>
+							<Link to={require('../../' + this.props.img4)} target='_blank'>
+								<img src={require('../../' + this.props.img4)} alt="Loading" className="img-responsive" />
+							</Link>
+						</Col>
 					</Row>
 					{ this.props.photoURL &&
 						<div className="text-right"><Link to={ this.props.photoURL } target="_blank">MORE</Link></div>
