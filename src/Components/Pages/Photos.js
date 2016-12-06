@@ -26,14 +26,17 @@ function Photo(props){
 	);
 }
 
+function ShowImage(props){
+	return(
+		<Link to={require('../../' + props.image)} target='_blank'>
+			<img src={require('../../' + props.image)} alt="Loading" className="img-responsive"  />
+		</Link>
+	)
+}
 class PhotoList2 extends Component{
-	constructor(){
-		super()
-		this.state ={'today': new Date()}
-	}
 	render(){
 		let eventDate = new Date(this.props.date);
-		let now = this.state.today;
+		let now = new Date();
 		if ( eventDate < now ) {
 			return (
 				<div>
@@ -45,26 +48,10 @@ class PhotoList2 extends Component{
 						<p className="text-center lead"> {this.props.desc_TW} </p>
 					}
 					<Row className="show-grid">
-					<Col sm={3}>
-						<Link to={require('../../' + this.props.img1)} target='_blank'>
-							<img src={require('../../' + this.props.img1)} alt="Loading" className="img-responsive" />
-						</Link>
-					</Col>
-						<Col sm={3}>
-							<Link to={require('../../' + this.props.img2)} target='_blank'>
-								<img src={require('../../' + this.props.img2)} alt="Loading" className="img-responsive" />
-							</Link>
-						</Col>
-						<Col sm={3}>
-							<Link to={require('../../' + this.props.img3)} target='_blank'>
-								<img src={require('../../' + this.props.img3)} alt="Loading" className="img-responsive" />
-							</Link>
-						</Col>
-						<Col sm={3}>
-							<Link to={require('../../' + this.props.img4)} target='_blank'>
-								<img src={require('../../' + this.props.img4)} alt="Loading" className="img-responsive" />
-							</Link>
-						</Col>
+						<Col sm={3}><ShowImage image={this.props.img1}/></Col>
+						<Col sm={3}><ShowImage image={this.props.img2}/></Col>
+						<Col sm={3}><ShowImage image={this.props.img3}/></Col>
+						<Col sm={3}><ShowImage image={this.props.img4}/></Col>
 					</Row>
 					{ this.props.photoURL &&
 						<div className="text-right"><Link to={ this.props.photoURL } target="_blank">MORE</Link></div>
