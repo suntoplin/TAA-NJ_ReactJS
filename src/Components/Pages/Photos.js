@@ -4,10 +4,9 @@ import {RowPhotos} from '../../RowData/RowPhotos'
 import { Link } from 'react-router';
 
 function Photo(props){
-	return (
+	return(
 		<div>
-			{
-				props.events.map(event => (
+			{ props.events.map(event => (
 					<PhotoList2
 						key={event.date.toString()}
 						date={event.date}

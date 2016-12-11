@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import Slider from 'react-slick'
 import {RowAims} from '../RowData/RowAims'
 
-class SimpleSlider extends Component{
+class AimsSlider extends Component{
     render(){
       const settings = {
         dots: true,
@@ -16,29 +16,17 @@ class SimpleSlider extends Component{
     return(
       <div className="container">
         <Slider {...settings}>
-          <div>
-            <img src={require('../' + this.props.event[0].img)} alt='Loading' className="img-thumbnail" />
-            <h3 className="text-center lead"><strong>“</strong> {this.props.event[0].title} <strong>“</strong></h3>
-          </div>
-          <div>
-            <img src={require('../' + this.props.event[1].img)} alt='Loading' className="img-thumbnail" />
-            <h3 className="text-center lead"><strong>“</strong> {this.props.event[1].title} <strong>“</strong></h3>
-          </div>
-          <div>
-            <img src={require('../' + this.props.event[2].img)} alt='Loading' className="img-thumbnail" />
-            <h3 className="text-center lead"><strong>“</strong> {this.props.event[2].title} <strong>“</strong></h3>
-          </div>
-          <div>
-            <img src={require('../' + this.props.event[3].img)} alt='Loading' className="img-thumbnail" />
-            <h3 className="text-center lead"><strong>“</strong> {this.props.event[3].title} <strong>“</strong></h3>
-          </div>
-          <div>
-            <img src={require('../' + this.props.event[4].img)} alt='Loading' className="img-thumbnail" />
-            <h3 className="text-center lead"><strong>“</strong> {this.props.event[4].title} <strong>“</strong></h3>
-          </div>
+        {this.props.event.map(
+          aim =>
+          (
+            <div key={aim.title.toString()}>
+              <img src={require('../' + aim.img)} alt='Lazy loading' className="img-thumbnail"  />
+              <h3 className="text-center lead"><strong>“</strong> {aim.title} <strong>“</strong></h3>
+            </div>
+          )
+        )}
         </Slider>
-        <br/>
-        <hr/>
+        <br/><hr/>
       </div>
     )
   }
@@ -47,7 +35,7 @@ class SimpleSlider extends Component{
 export default class Aims extends Component{
 	render(){
 		return(
-      <SimpleSlider event={RowAims} />
+      <AimsSlider event={RowAims} />
 		)
 	}
 }
