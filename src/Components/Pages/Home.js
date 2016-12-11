@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import UpcomingEvents from '../UpcomingEvents';
 import PastEvents from '../PastEvents';
 import Objectives from '../Objectives';
+import Aims from '../Aims';
 import RegularActivities from '../RegularActivities';
 
 export default class Home extends Component {
@@ -13,10 +14,9 @@ export default class Home extends Component {
 		    <UpcomingEvents />
 		    <PastEvents />
 		    <Objectives />
-		    <RegularActivities />	
+				<Aims />
+		    <RegularActivities />
 		  </div>
 		);
 	}
 }
-
-
