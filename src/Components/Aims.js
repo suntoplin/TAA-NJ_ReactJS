@@ -21,7 +21,7 @@ class AimsSlider extends Component{
           (
             <div key={aim.title.toString()}>
               <img src={require('../' + aim.img)} alt='Lazy loading' className="img-thumbnail"  />
-              <h3 className="text-center lead"><strong>“</strong> {aim.title} <strong>“</strong></h3>
+              <h3 className="text-center lead"><strong>“ {aim.title} “</strong></h3>
             </div>
           )
         )}

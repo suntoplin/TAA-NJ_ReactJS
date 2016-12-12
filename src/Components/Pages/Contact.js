@@ -21,8 +21,7 @@ export default class Contact extends Component{
   render(){
     return(
       <div>
-      <h1>Contact TAA-NJ </h1>
-
+      <h1>Contact TAA-NJ </h1>    
       </div>
     )
   }
